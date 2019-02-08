@@ -1,6 +1,5 @@
 ﻿#region Usings
 
-using System;
 using Gf.RabbitMq.Core.Components;
 
 #endregion

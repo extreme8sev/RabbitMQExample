@@ -1,10 +1,16 @@
-﻿using System;
+﻿#region Usings
+
+using System;
 using Gf.RabbitMq.Core.Components;
+
+#endregion
 
 namespace Gf.RabbitMq.QueueProducer
 {
     internal class Program
     {
+        #region  Private Methods
+
         private static void Main()
         {
             var rabbitMqConnectionOptions = new RabbitMqConnectionOptions("localhost",
@@ -20,5 +26,7 @@ namespace Gf.RabbitMq.QueueProducer
                 Console.WriteLine("Press any key to continue or press ESC to exit...");
             } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
         }
+
+        #endregion
     }
 }
