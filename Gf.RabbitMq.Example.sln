@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gf.RabbitMq.Example", "Gf.RabbitMq.Example\Gf.RabbitMq.Example.csproj", "{1518D461-0BCB-4159-A0D8-D92CFCC8FA24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gf.RabbitMq.Core", "..\Gf.RabbitMq.Core\Gf.RabbitMq.Core.csproj", "{5FD1163E-26F7-4D9D-8637-B8A9F0EDEAEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gf.RabbitMq.Consumer", "Gf.RabbitMq.Consumer\Gf.RabbitMq.Consumer.csproj", "{EB4E9D9A-4825-4788-A153-04561701572A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gf.RabbitMq.Producer", "Gf.RabbitMq.Producer\Gf.RabbitMq.Producer.csproj", "{7ED17F25-1773-4735-999A-A5AF28B7FBB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gf.RabbitMq.QueueProducer", "Gf.RabbitMq.QueueProducer\Gf.RabbitMq.QueueProducer.csproj", "{A15348DC-9AEE-4AC3-B538-D123D18B7477}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simple", "Simple", "{D5778319-85B5-48C3-9240-B11A09DBBEFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Queue", "Queue", "{B6788AFC-1DD1-4C78-B088-9876284A70D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gf.RabbitMq.QueueConsumer", "Gf.RabbitMq.QueueConsumer\Gf.RabbitMq.QueueConsumer.csproj", "{104B7153-4399-44B5-9524-4955C28965A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +23,35 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1518D461-0BCB-4159-A0D8-D92CFCC8FA24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1518D461-0BCB-4159-A0D8-D92CFCC8FA24}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1518D461-0BCB-4159-A0D8-D92CFCC8FA24}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1518D461-0BCB-4159-A0D8-D92CFCC8FA24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FD1163E-26F7-4D9D-8637-B8A9F0EDEAEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FD1163E-26F7-4D9D-8637-B8A9F0EDEAEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FD1163E-26F7-4D9D-8637-B8A9F0EDEAEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FD1163E-26F7-4D9D-8637-B8A9F0EDEAEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB4E9D9A-4825-4788-A153-04561701572A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB4E9D9A-4825-4788-A153-04561701572A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB4E9D9A-4825-4788-A153-04561701572A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB4E9D9A-4825-4788-A153-04561701572A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ED17F25-1773-4735-999A-A5AF28B7FBB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED17F25-1773-4735-999A-A5AF28B7FBB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ED17F25-1773-4735-999A-A5AF28B7FBB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ED17F25-1773-4735-999A-A5AF28B7FBB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A15348DC-9AEE-4AC3-B538-D123D18B7477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15348DC-9AEE-4AC3-B538-D123D18B7477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15348DC-9AEE-4AC3-B538-D123D18B7477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15348DC-9AEE-4AC3-B538-D123D18B7477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{104B7153-4399-44B5-9524-4955C28965A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{104B7153-4399-44B5-9524-4955C28965A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{104B7153-4399-44B5-9524-4955C28965A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{104B7153-4399-44B5-9524-4955C28965A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EB4E9D9A-4825-4788-A153-04561701572A} = {D5778319-85B5-48C3-9240-B11A09DBBEFD}
+		{7ED17F25-1773-4735-999A-A5AF28B7FBB9} = {D5778319-85B5-48C3-9240-B11A09DBBEFD}
+		{A15348DC-9AEE-4AC3-B538-D123D18B7477} = {B6788AFC-1DD1-4C78-B088-9876284A70D3}
+		{104B7153-4399-44B5-9524-4955C28965A7} = {B6788AFC-1DD1-4C78-B088-9876284A70D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {57B92FF9-7845-4187-8027-F437EE9BB9F6}

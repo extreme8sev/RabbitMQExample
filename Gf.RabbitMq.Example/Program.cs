@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text;
+using RabbitMQ.Client;
 
 namespace Gf.RabbitMq.Example
 {
@@ -6,7 +8,6 @@ namespace Gf.RabbitMq.Example
     {
         private static void Main()
         {
-            Console.WriteLine("Hello World!");
         }
     }
 }
